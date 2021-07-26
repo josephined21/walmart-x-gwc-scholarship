@@ -1,31 +1,522 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Walmart</title>
-        <link rel="icon" href="https://www.kuaf.com/sites/kuaf/files/201906/walmart_spark.png">
-        <link rel = "stylesheet" href = "style.css">
-        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-    </head>
-    <body>
-        
-        <div class = "navbar">
-            <a href = "index.html">
-                <img src = "https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png" height = "32px"/>
-            </a>
-            <div class = "link">
-                <a href = "https://corporate.walmart.com/tech" id = "tech-with-purpose" target="_blank">OTHER WALMART INNOVATIONS</a>
-                <a href = "https://www.walmart.com/" id = "shop" target="_blank">SHOP</a>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://www.kuaf.com/sites/kuaf/files/201906/walmart_spark.png">
+    <title>Walmart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navigationbar linkbar">
+        <a href="index.html">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png" height="32px" />
+        </a>
+        <a href="#howitworks">HOW IT WORKS</a>
+        <a href="#sustainability">SUSTAINABILITY</a>
+        <a href="#touchscreendemo">TOUCHSCREEN DEMO</a>
+        <a href="#faq">FAQ</a>
+        <div class="rightlink">
+            <a href="https://corporate.walmart.com/tech" target="_blank" style="color: #ffc220;">OTHER WALMART
+                INNOVATIONS
+                <img src="https://image.flaticon.com/icons/png/512/1087/1087815.png"
+                    style="height: 25px; width: 25px;" /></a>
+            <a href="https://www.walmart.com/" target="_blank" style="color: #ffc220;">SHOP
+                <img src="https://image.flaticon.com/icons/png/512/3081/3081648.png"
+                    style="height: 25px; width: 25px;" /></a>
+        </div>
+    </div>
+    <div class="blob">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 310 350">
+            <path
+                d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z" />
+        </svg>
+    </div>
+    <div>
+        <div>
+            <br>
+            <h1 id="gocart" style="float: left;">GoCart</h1>
+            <img src="https://static.turbosquid.com/Preview/2014/07/04__00_58_08/shoppingcart+1.jpga091c6fb-db90-44d8-be19-b2992b4cb945Large.jpg"
+                style="float: left; padding: 50px;" />
+        </div>
+        <a id="clicktolearnmore" href="#howitworks">Click to Learn More!</a>
+    </div>
+
+    <div style="float: left; width: 100%;">
+        <br><br><br><br>
+        <h1>How It Works</h1>
+        <div id="howitworks" style="float: left; width: 60%; margin-left: 20%;"><br>
+            <div class="row align-items-start">
+                <div class="card col" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="cardnum">1</h3>
+                        <img class="hiwicon" src="https://image.flaticon.com/icons/png/512/1738/1738766.png" /><br><br>
+                        <h5 class="card-title">Log In</h5>
+                        <p class="card-text">If you have a Walmart account, you can either sign in with your information
+                            on
+                            the touchscreen or open the Walmart app on your mobile device and scan the QR code on the
+                            touchscreen.</p>
+                        <button type="button" class="btn readmore" data-bs-toggle="modal" data-bs-target="#logInModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="card col" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="cardnum">2</h3>
+                        <img class="hiwicon" src="https://image.flaticon.com/icons/png/512/3770/3770807.png" /><br><br>
+                        <h5 class="card-title">Shop</h5>
+                        <p class="card-text">You can shop as you would normally, but hands-free!</p>
+                        <button type="button" class="btn readmore" data-bs-toggle="modal" data-bs-target="#shopModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="card col" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="cardnum">3</h3>
+                        <img class="hiwicon" src="https://image.flaticon.com/icons/png/512/3126/3126571.png" /><br><br>
+                        <h5 class="card-title">Put Items in Your Cart</h5>
+                        <p class="card-text">You can put items directly into the cart! The GoCart will automatically
+                            scan and add that item to your subtotal.</p>
+                        <button type="button" class="btn readmore" data-bs-toggle="modal"
+                            data-bs-target="#putItemsModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="card col" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="cardnum">4</h3>
+                        <img class="hiwicon" src="https://image.flaticon.com/icons/png/512/839/839947.png" /><br><br>
+                        <h5 class="card-title">Input Produce Code</h5>
+                        <p class="card-text">For fresh produce, simply find the numerical code on the display's
+                            sign, and input it into the touchscreen's search bar. The GoCart
+                            will weigh the produce when you place it into the cart.</p>
+                        <button type="button" class="btn readmore" data-bs-toggle="modal"
+                            data-bs-target="#produceModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-end" style="width: 50%; margin-left: 25%;">
+                <div class="card col" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="cardnum">5</h3>
+                        <img class="hiwicon" src="https://image.flaticon.com/icons/png/512/2643/2643862.png" /><br><br>
+                        <h5 class="card-title">Check Out</h5>
+                        <p class="card-text">When you're ready to check out, tap the "Check Out" button on the
+                            touchscreen,
+                            and you can pay right away!</p>
+                        <button type="button" class="btn readmore" data-bs-toggle="modal"
+                            data-bs-target="#checkOutModal">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    If you have a Walmart account, you can either sign in with your information on the touchscreen or
+                    open the Walmart app on your mobile device and scan the QR code on the touchscreen. If you have the
+                    Walmart app, you can create a shopping list before coming in-store, and the list will be synced to
+                    your cart's touchscreen. The touchscreen will display an optimized route navigating through the
+                    aisles so that you can pick up all the items you need in the shortest time possible. If you do not
+                    have a Walmart account, you may still use the touchscreen as a Guest. We strongly encourage you to
+                    create an account with Walmart, but we promise you will still have a great shopping experience
+                    without one!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
-        <div class = "blob">
-            <svg xmlns:xlink = "http://www.w3.org/1999/xlink" version = "1.1" xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 310 350">
-                <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
-            </svg>
+    </div>
+
+    <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Shop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    You can shop as you would normally, but hands-free! The Walmart GoCart is equipped with a feature so
+                    that if you walk with your mobile device in your pocket or somewhere on you, the GoCart will follow
+                    you around as you shop (of course watching out for obstacles like displays or other shoppers)! If
+                    you would prefer to push the GoCart yourself, you may chose that option as well.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <h1 style = "float: left;">GoCart</h1>
-            <img src = "https://static.turbosquid.com/Preview/2014/07/04__00_58_08/shoppingcart+1.jpga091c6fb-db90-44d8-be19-b2992b4cb945Large.jpg" style = "float: left; padding: 30px;"/>
+    </div>
+
+    <div class="modal fade" id="putItemsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Put Items in Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    You can put items directly into the cart! The GoCart has a sophisticated sensor system that will
+                    automatically scan and add items to your subtotal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <div class="modal fade" id="produceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Input Produce Code</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    For fresh produce, simply find the numerical code on the display's sign, and input it into the
+                    touchscreen's search bar. The GoCart has a weighing system that will weigh the produce when you
+                    place it into the cart. Easy peasy lemon squeezy!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="checkOutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check Out</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    When you're ready to check out, tap the "Check Out" button on the touchscreen,
+                    and you can pay right away! If you are signed in to your Walmart account, your payment will
+                    process automatically. If you are not signed in, you will be prompted to go through a basic self
+                    checkout process. The touchscreen device is equipped with a chip reader and a card swiper for your
+                    convenience. After successful payment, an exit pass barcode will appear on the screen, and an
+                    employee will
+                    approve it at the exit while you are heading out. No need to wait in lines!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Sustainability</h1>
+    <div class="container" id="sustainability" style="float: left; margin-left: 8%; width: 82%;">
+        <div class="row align-items-start">
+            <p>"As the world’s largest retailer, we have the ability to effect meaningful change for people and the
+                planet.
+                That’s why for more than a decade, we’ve made intentional efforts to reduce our waste and to increase
+                recycling of plastic in our operations and by customers and suppliers."</p>
+            <a href="https://corporate.walmart.com/askwalmart/what-is-walmart-doing-about-plastic-waste"
+                target="_blank">What Walmart Is Doing About Plastic Waste</a>
+            <div class="col">
+                <img src="https://image.flaticon.com/icons/png/512/892/892894.png" class="hiwicon" />
+                <h3>Recycled Plastic</h3>
+                <p>The Walmart GoCart is made from 100% recycled plastic. The manufacturing does not involve chrome
+                    plating processes; chromic acid, hydrochloric acid, nickel chloride, nickel metal, nickel
+                    sulfate or sodium bisulphate are not used. The Walmart GoCart has a longer lifespan than
+                    conventional metal shopping carts because it does not rust.</p>
+                <!-- https://polycartgroup.com/old/en/ecologico.htm -->
+            </div>
+
+            <div class="col">
+                <img src="https://image.flaticon.com/icons/png/512/4643/4643284.png" class="hiwicon" />
+                <h3>Reusable or Paper Bags</h3>
+                <p>Walmart is making an effort to reduce use of plastic bags in our stores. We strongly encourage
+                    shoppers to bring their own reusable shopping bags or purchase reusable bags during their shopping
+                    trips to Walmart. Paper bags are available upon request.</p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <h1>Touchscreen Demo</h1>
+    <section class="container-lg touchscreen" id="touchscreendemo"
+        style="background-color: white; float: left; margin-left: 8%; width: 82%;">
+        <nav class="navbar sticky-top" style="background-color: #004c91;">
+            <div class="container">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png" alt=""
+                    height="24">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+            <button type="button" class="btn-close btn-close-white" onclick="closeNav()" aria-label="Close"></button>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item1" type="checkbox" value="" checked>
+                    avocados
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item2" type="checkbox" value="">
+                    bananas
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item3" type="checkbox" value="" checked>
+                    cheerios
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item4" type="checkbox" value="" checked>
+                    eggs
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item5" type="checkbox" value="">
+                    ice cream
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item7" type="checkbox" value="" checked>
+                    toilet paper
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item9" type="checkbox" value="">
+                    ballpoint pens
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" id="item10" type="checkbox" value="">
+                    notebook
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col col-1">
+                    <button class="orangebtn" id="openbtn" onclick="openNav()">&#9776;</button>
+                    <div id="maparea"><br>
+                        <button type="button" class="btn orangebtn" id="btn" data-bs-toggle="modal"
+                            data-bs-target="#mapModal">Map</button><br><br>
+                        <p style="font-size: 10px;">'ice cream' is in aisle A2 | A3</p>
+                    </div>
+                </div>
+                <div class="col col-7"><br>
+                    <h3>Your Cart</h3>
+                    <div class="row gx-5">
+                        <div class="col col-1">
+                            <img src="https://i5.walmartimages.com/asr/098962b7-7d67-4ff5-a3c9-047c430f8fea_1.5847cdd72fa776356460d77b0b3c9301.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
+                                id="productimg" /><br><br>
+                        </div>
+                        <div class="col col-6" style="margin-left: 75px;">
+                            <h6 id="list-item-1">Hass Avocados</h6>
+                        </div>
+                        <div class="col col-2">
+                            <p>
+                                $2.58<br>
+                                Qty 3
+                            </p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col col-1">
+                            <img src="https://i5.walmartimages.com/asr/98215c9c-4d29-409e-b488-f49803cae741.c137b83e5d420ea96c54602fe7534f92.png?odnWidth=612&odnHeight=612&odnBg=ffffff"
+                                id="productimg" /><br><br>
+                        </div>
+                        <div class="col col-6" style="margin-left: 75px;">
+                            <h6 id="list-item-2">Cheerios Whole Grain Oats, Gluten Free, 21.7 oz</h6>
+                        </div>
+                        <div class="col col-2">
+                            <p>
+                                $4.98<br>
+                                Qty 1
+                            </p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col col-1">
+                            <img src="https://i5.walmartimages.com/asr/1c21f85d-2ed1-4196-bde8-62a8573b6191.20c5c5fda1aca2f7d7e197970eaebb88.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff"
+                                id="productimg" /><br><br>
+                        </div>
+                        <div class="col col-6" style="margin-left: 75px;">
+                            <h6 id="list-item-3">Eggland's Best Farm Fresh Large, White, Grade A Eggs, 12ct.</h6>
+                        </div>
+                        <div class="col col-2">
+                            <p>
+                                $2.77<br>
+                                Qty 1
+                            </p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col col-1">
+                            <img src="https://i5.walmartimages.com/asr/40f13cd8-4fa8-4c51-88a9-3de4253cd4b4.d5a48d6fa25f4d9273400ef01a18fe9a.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff"
+                                id="productimg" /><br><br>
+                        </div>
+                        <div class="col col-6" style="margin-left: 75px;">
+                            <h6 id="list-item-4">Angel Soft Toilet Paper, 18 Mega Rolls</h6>
+                        </div>
+                        <div class="col col-2">
+                            <p>
+                                $13.98<br>
+                                Qty 1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-1"><br>
+                    <h5>Total</h5>$24.31
+
+                </div>
+                <div class="col col-3" style="float: right; height: 550px; overflow-y: scroll;">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action">apples</a>
+                        <a class="list-group-item list-group-item-action">avocados</a>
+                        <a class="list-group-item list-group-item-action">blackberries</a>
+                        <a class="list-group-item list-group-item-action">blueberries</a>
+                        <a class="list-group-item list-group-item-action">lemons</a>
+                        <a class="list-group-item list-group-item-action">limes</a>
+                        <a class="list-group-item list-group-item-action">mangos</a>
+                        <a class="list-group-item list-group-item-action">oranges</a>
+                        <a class="list-group-item list-group-item-action">raspberries</a>
+                        <a class="list-group-item list-group-item-action">strawberries</a>
+
+                        <a class="list-group-item list-group-item-action">asparagus</a>
+                        <a class="list-group-item list-group-item-action">broccoli</a>
+                        <a class="list-group-item list-group-item-action">cabbage</a>
+                        <a class="list-group-item list-group-item-action">carrots</a>
+                        <a class="list-group-item list-group-item-action">cauliflower</a>
+                        <a class="list-group-item list-group-item-action">cucumbers</a>
+                        <a class="list-group-item list-group-item-action">green beans</a>
+                        <a class="list-group-item list-group-item-action">onions</a>
+                        <a class="list-group-item list-group-item-action">potatoes</a>
+                        <a class="list-group-item list-group-item-action">spinach</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="faq" style="float: left; margin-left: 8%; width: 82%;">
+        <br><br><br>
+        <h1>Frequently Asked Questions</h1><br>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What is Walmart GoCart?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Walmart GoCart is a shopping cart innovation that is tailored to
+                        streamline customers' shopping experiences.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        At which Walmart locations can I shop with Walmart GoCart?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The Walmart GoCart is not yet available for public use.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Can I put my purse, backpack, or other personal belongings into the Walmart GoCart?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">No, you should not place your personal belongings into the Walmart
+                        GoCart because it is highly weight sensitive, and may calculate your belongings as items
+                        you want to purchase. Please use the hook attached on the cart to hang your personal bags.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Can I take the Walmart GoCart out to my car?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We do not allow taking the Walmart GoCart out of the store. We suggest
+                        that you use the Walmart GoCart for lighter shopping hauls so that you can bring all of your
+                        purchased items to your vehicle in one trip. If needed, you can use a standard shopping cart or
+                        basket to bring all your items to your vehicle. In a situation where there are no available
+                        standard shopping carts or baskets, ask an employee in-store for assistance.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Have additional questions?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Visit the <a href="https://www.walmart.com/help" target="_blank">Walmart
+                            Help Center</a> for more information.</div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<footer style="float: left;">
+    <h5><a href="https://corporate.walmart.com/contact-us" target="_blank">Contact Us</a></h5>
+    <a href="https://twitter.com/walmart" target="_blank"><img
+            src="https://www.iconsdb.com/icons/preview/white/twitter-xl.png" class="icon" /></a>
+    <a href="https://www.instagram.com/walmart/" target="_blank"><img
+            src="https://www.iconsdb.com/icons/preview/white/instagram-xl.png" class="icon" /></a>
+    <a href="https://www.youtube.com/walmart" target="_blank"><img
+            src="https://www.iconsdb.com/icons/preview/white/youtube-3-xl.png" class="icon" /></a>
+    <a href="https://www.pinterest.com/walmart/" target="_blank"><img
+            src="https://www.iconsdb.com/icons/preview/white/pinterest-4-xl.png" class="icon" /></a>
+    <a href="https://www.facebook.com/walmart" target="_blank"><img
+            src="https://www.iconsdb.com/icons/preview/white/facebook-xl.png" class="icon" /></a>
+</footer>
+
 </html>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+.navigationbar {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.linkbar a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+.linkbar a:hover {
+    color: #ffc220;
+}
+
+.rightlink {
+  float: right;
+}
+
+.rightlink a:hover {
+  color: white !important;
+}
+
+body {
+  background-color: #78b9e7 !important;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#gocart {
+  color: white;
+  font-size: 20vmin !important;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 2px !important;
+  font-family: 'Poppins', sans-serif !important;
+  padding: 100px !important;
+}
+
+#clicktolearnmore {
+  color: white;
+  background-color: #007dc6;
+  font-family: 'Poppins', sans-serif !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border: none;
+  border-radius: 30px !important;
+  padding: 20px !important;
+  width: 225px !important;
+  position: absolute;
+  top: 300px !important;
+  left: 100px !important;
+}
+
+#clicktolearnmore:hover {
+  color: white !important;
+  background-color: #c0daed !important;
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #004c91;
+  width: 50vmax;
+  z-index: -1;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes move {
+  0%   { transform: scale(1)   translate(10px, -30px); }
+  38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(10px, -30px); }
+}
+
+h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center !important;
+}
+
+.card {
+  text-align: center;
+  height: 325px;
+  width: 15% !important;
+  margin: 15px;
+}
+
+.cardnum {
+  position: absolute;
+  left: 20px;
+}
+
+.hiwicon {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.readmore {
+  color: white !important;
+  background-color: #007dc6 !important;
+  font-family: 'Poppins', sans-serif !important;
+  border-radius: 30px !important;
+  
+}
+
+.readmore:hover {
+  color: white !important;
+  background-color: #c0daed !important;
+}
+
+#sustainability {
+  color: white;
+  text-align: center;
+}
+
+.sidebar {
+  float: left;
+  position: relative;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 25;
+  background-color: #ffc220;
+  overflow-x: hidden;
+  padding-top: 25px;
+  transition: 0.5s;
+}
+
+.sidebar .closebtn {
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+}
+
+.orangebtn {
+  color: white !important;
+  font-size: 20px !important;
+  background-color: #ffc220 !important;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0% !important;
+}
+
+.orangebtn:hover {
+  background-color: #f47321;
+}
+
+#touchscreencontent {
+  transition: margin-left .5s;
+}
+
+#touchscreendemo {
+  height: 550px;
+  overflow: scroll;
+}
+
+#productimg {
+  width: 100px;
+}
+
+footer {
+  background-color: #004c91;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 100%;
+  padding: 25px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.icon {
+  height: 20px !important;
+  width: 20px !important;
+  margin-right: 20px;
+}
