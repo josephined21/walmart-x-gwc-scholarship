@@ -1,1 +1,0 @@
-# walmart-x-gwc-scholarship
