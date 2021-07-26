@@ -1,5 +1,6 @@
 document.getElementById("mySidebar").style.display = "none";
 
+// opens sidebar shopping list in the touchscreen demo
 function openNav() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("mySidebar").style.width = "20%";
@@ -7,6 +8,7 @@ function openNav() {
     document.getElementById("maparea").style.display = "none";
 }
 
+// closes sidebar shopping list in the touchscreen demo
 function closeNav() {
     document.getElementById("openbtn").style.display = "block";
     document.getElementById("maparea").style.display = "block";

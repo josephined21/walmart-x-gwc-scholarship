@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
 
+/* navigation bar */
 .navigationbar {
     padding-left: 25px;
     padding-top: 10px;
@@ -24,12 +25,14 @@
   color: white !important;
 }
 
+/* body */
 body {
   background-color: #78b9e7 !important;
   overflow-x: hidden;
   position: relative;
 }
 
+/* top section */
 #gocart {
   color: white;
   font-size: 20vmin !important;
@@ -86,6 +89,7 @@ h1 {
   text-align: center !important;
 }
 
+/* how it works section */
 .card {
   text-align: center;
   height: 325px;
@@ -116,11 +120,13 @@ h1 {
   background-color: #c0daed !important;
 }
 
+/* sustainability section */
 #sustainability {
   color: white;
   text-align: center;
 }
 
+/* touchscreen demo section */
 .sidebar {
   float: left;
   position: relative;
@@ -166,6 +172,7 @@ h1 {
   width: 100px;
 }
 
+/* footer */
 footer {
   background-color: #004c91;
   font-family: 'Poppins', sans-serif;
