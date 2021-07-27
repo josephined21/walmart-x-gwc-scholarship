@@ -40,7 +40,7 @@ body {
   font-weight: bold;
   letter-spacing: 2px !important;
   font-family: 'Poppins', sans-serif !important;
-  padding: 100px !important;
+  padding: 80px !important;
 }
 
 #clicktolearnmore {
@@ -55,7 +55,7 @@ body {
   width: 225px !important;
   position: absolute;
   top: 300px !important;
-  left: 100px !important;
+  left: 80px !important;
 }
 
 #clicktolearnmore:hover {
