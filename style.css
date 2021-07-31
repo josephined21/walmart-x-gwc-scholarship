@@ -163,9 +163,12 @@ h1 {
   transition: margin-left .5s;
 }
 
-#touchscreen {
+.touchscreen {
+  /* float: left;  */
+  margin-left: 8%; 
+  width: 82%;
   height: 550px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #productimg {
@@ -194,4 +197,17 @@ footer a:hover {
   height: 20px !important;
   width: 20px !important;
   margin-right: 20px;
+}
+
+.guest {
+  color: white !important;
+  background-color: #c0daed !important;
+  font-family: 'Poppins', sans-serif !important;
+  border-radius: 30px !important;
+  
+}
+
+.guest:hover {
+  color: white !important;
+  background-color: #007dc6 !important;
 }

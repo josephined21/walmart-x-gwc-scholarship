@@ -18,8 +18,7 @@
     <!-- navigation bar -->
     <div class="navigationbar linkbar">
         <a href="index.html">
-            <img src="https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png"
-                height="32px" />
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png" height="32px" />
         </a>
         <a href="#howitworks">HOW IT WORKS</a>
         <a href="#sustainability">SUSTAINABILITY</a>
@@ -281,8 +280,31 @@
             the functionality! It should be noted that the following is merely a sample, and does not implement the
             touchscreen's complete range of capabilities.</p>
     </div>
-    <section class="container-lg" id="touchscreen"
-        style="background-color: white; float: left; margin-left: 8%; width: 82%;">
+
+    <section class="container-lg touchscreen" id="signin" style="text-align: center; overflow: hidden;">
+        <div style="background-color: #004c91; color: white;"><br><br><br>
+            <img src="https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/person-icon.png"
+                style="width: 60px;" /><br><br>
+            <h4 style="font-family: 'Poppins', sans-serif;">Sign In</h4>
+            <p>for more ways to save time and money.</p><br>
+        </div>
+        <div style="background-color: white;"><br>
+            <form>
+                <div class="mb-3" style="margin-left: 8%; width: 82%;">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email Address (required)" required>
+                </div>
+                <div class="mb-3" style="margin-left: 8%; width: 82%;">
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Password (required)" required>
+                </div><br>
+                <button type="submit" class="btn readmore" onclick="cont()">Sign In</button>
+            </form><br>
+            <button class="btn guest" onclick="cont()">Continue As Guest</button><br><br><br><br>    
+        </div>
+    </section>
+
+    <section class="container-lg touchscreen" id="mainscreen" style="background-color: white;">
         <nav class="navbar sticky-top" style="background-color: #004c91;">
             <div class="container">
                 <img src="https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png" alt=""

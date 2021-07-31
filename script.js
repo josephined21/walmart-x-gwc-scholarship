@@ -16,3 +16,10 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("touchscreencontent").style.marginLeft = "0";
 }
+
+document.getElementById("mainscreen").style.display = "none";
+
+function cont() {
+    document.getElementById("signin").style.display = "none";
+    document.getElementById("mainscreen").style.display = "block";
+}
