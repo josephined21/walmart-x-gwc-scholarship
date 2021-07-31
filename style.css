@@ -121,7 +121,7 @@ h1 {
 }
 
 /* sustainability section */
-#sustainability {
+.sustainability {
   color: white;
   text-align: center;
 }
@@ -163,7 +163,7 @@ h1 {
   transition: margin-left .5s;
 }
 
-#touchscreendemo {
+#touchscreen {
   height: 550px;
   overflow: scroll;
 }
