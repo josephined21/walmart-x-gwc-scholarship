@@ -300,15 +300,19 @@
                 </div><br>
                 <button type="submit" class="btn readmore" onclick="cont()">Sign In</button>
             </form><br>
-            <button class="btn guest" onclick="cont()">Continue As Guest</button><br><br><br><br>    
+            <button class="btn guest" onclick="cont()">Continue As Guest</button><br><br><br><br>
         </div>
     </section>
 
     <section class="container-lg touchscreen" id="mainscreen" style="background-color: white;">
         <nav class="navbar sticky-top" style="background-color: #004c91;">
             <div class="container">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png" alt=""
-                    height="24">
+                <div>
+                    <!-- menu button to open sidebar shopping list -->
+                    <button class="grocerylistbtn" id="openbtn" onclick="openCloseNav()">&#9776;</button>
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/walmart-logo-black-and-white.png" alt=""
+                        height="24">
+                </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -358,8 +362,6 @@
         <div class="container">
             <div class="row align-items-start">
                 <div class="col col-1">
-                    <!-- menu button to open sidebar shopping list -->
-                    <button class="orangebtn" id="openbtn" onclick="openNav()">&#9776;</button>
                     <!-- map button to toggle modal w walmart store layout -->
                     <!-- NOT YET IMPLEMENTED-->
                     <div id="maparea"><br>

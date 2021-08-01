@@ -1,20 +1,26 @@
 document.getElementById("mySidebar").style.display = "none";
 
-// opens sidebar shopping list in the touchscreen demo
-function openNav() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("mySidebar").style.width = "20%";
-    document.getElementById("openbtn").style.display = "none";
-    document.getElementById("maparea").style.display = "none";
-}
+let num = 0;
 
-// closes sidebar shopping list in the touchscreen demo
+// x button closes sidebar shopping list in the touchscreen demo
 function closeNav() {
-    document.getElementById("openbtn").style.display = "block";
-    document.getElementById("maparea").style.display = "block";
+    num++;
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("touchscreencontent").style.marginLeft = "0";
+}
+
+// menu button opens or closes sidebar shopping list in the touchscreen demo
+function openCloseNav() {
+    num++;
+    if (num % 2 == 1) {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("mySidebar").style.width = "20%";
+    } else {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("touchscreencontent").style.marginLeft = "0";
+    }
 }
 
 document.getElementById("mainscreen").style.display = "none";
