@@ -40,7 +40,10 @@ body {
   font-weight: bold;
   letter-spacing: 2px !important;
   font-family: 'Poppins', sans-serif !important;
-  padding: 80px !important;
+  padding-left: 50px !important;
+  padding-bottom: 0px !important;
+  padding-top: 100px !important;
+  text-align: left !important;
 }
 
 #clicktolearnmore {
@@ -61,6 +64,38 @@ body {
 #clicktolearnmore:hover {
   color: white !important;
   background-color: #c0daed !important;
+}
+
+.stage {
+  display: flex;
+  float: left;
+}
+
+.box {
+  align-self: flex-end;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+}
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-20px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
 }
 
 .blob {
