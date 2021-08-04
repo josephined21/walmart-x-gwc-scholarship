@@ -412,11 +412,11 @@
             <form>
                 <div class="mb-3" style="margin-left: 8%; width: 82%;">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Email Address (required)" required>
+                        placeholder="Email Address" required>
                 </div>
                 <div class="mb-3" style="margin-left: 8%; width: 82%;">
                     <input type="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="Password (required)" required>
+                        placeholder="Password" required>
                 </div><br>
                 <button type="submit" class="btn readmore" onclick="cont()">Sign In</button>
             </form><br>
@@ -434,8 +434,8 @@
                         height="24">
                 </div>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" id="input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" onclick="search()">Search</button>
                 </form>
             </div>
         </nav>
@@ -491,7 +491,7 @@
                     </div>
                 </div>
                 <!-- cart area w items in your cart -->
-                <div class="col col-7"><br>
+                <div class="col col-7" id="yourcart"><br>
                     <h3>Your Cart</h3>
                     <div class="row gx-5">
                         <div class="col col-1">
@@ -579,10 +579,10 @@
                         <a class="list-group-item list-group-item-action">carrots</a>
                         <a class="list-group-item list-group-item-action">cauliflower</a>
                         <a class="list-group-item list-group-item-action">cucumbers</a>
-                        <a class="list-group-item list-group-item-action">green beans</a>
+                        <a class="list-group-item list-group-item-action">lettuce</a>
                         <a class="list-group-item list-group-item-action">onions</a>
                         <a class="list-group-item list-group-item-action">potatoes</a>
-                        <a class="list-group-item list-group-item-action">spinach</a>
+                        <a class="list-group-item list-group-item-action">zucchini</a>
                     </div>
                 </div>
             </div>
