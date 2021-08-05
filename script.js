@@ -39,8 +39,8 @@ function search() {
     for (let i = 0; i < produce.length; i++) {
         if (produce[i].toLowerCase().includes(input)) {
             console.log(produce[i]);
-            document.getElementById("yourcart").innerHTML += `
-                <hr>    
+            document.getElementById("yourcart").innerHTML += 
+                `<hr>    
                 <div class="row gx-5">
                     <div class="col col-1">
                         <img src="${images[i]}"
@@ -52,14 +52,21 @@ function search() {
                         <div class="col col-2">
                             <p>
                                 $${prices[i]}<br>
-                                Qty
+                                Qty <input type="number" class="form-control" min=1 max=12 value=1>
                             </p>
+                        </div>
+                        <div class="col col-1">
+                            <button type="button" class="btn" onclick="removeFromCart()"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
                         </div>
                     </div>
                 </div>`;
         }
     }
     document.querySelector("#input").value = "";
+}
+
+function removeFromCart() {
+    
 }
 
 // function autocomplete(inp, arr) {
