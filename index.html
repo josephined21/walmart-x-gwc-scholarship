@@ -434,7 +434,7 @@
                         height="24">
                 </div>
                 <form class="d-flex">
-                    <input class="form-control me-2" id="input" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" id="input" placeholder="Search">
                     <button class="btn btn-outline-success" type="submit" onclick="search()">Search</button>
                 </form>
             </div>
@@ -493,7 +493,7 @@
                 <!-- cart area w items in your cart -->
                 <div class="col col-7" id="yourcart"><br>
                     <h3>Your Cart</h3>
-                    <div class="row gx-5" id="1">
+                    <div class="row gx-5" id="0">
                         <div class="col col-1">
                             <img src="https://i5.walmartimages.com/asr/098962b7-7d67-4ff5-a3c9-047c430f8fea_1.5847cdd72fa776356460d77b0b3c9301.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
                                 id="productimg" /><br><br>
@@ -508,11 +508,11 @@
                             </p>
                         </div>
                         <div class="col col-1">
-                            <button type="button" class="btn" onclick="removeFromCart(1)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
+                            <button type="button" class="btn" onclick="removeFromCart(0)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
                         </div>
                         <hr>
                     </div>
-                    <div class="row gx-5" id="2">
+                    <div class="row gx-5" id="1">
                         <div class="col col-1">
                             <img src="https://i5.walmartimages.com/asr/98215c9c-4d29-409e-b488-f49803cae741.c137b83e5d420ea96c54602fe7534f92.png?odnWidth=612&odnHeight=612&odnBg=ffffff"
                                 id="productimg" /><br><br>
@@ -527,11 +527,11 @@
                             </p>
                         </div>
                         <div class="col col-1">
-                            <button type="button" class="btn" onclick="removeFromCart(2)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
+                            <button type="button" class="btn" onclick="removeFromCart(1)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
                         </div>
                         <hr>
                     </div>
-                    <div class="row gx-5" id="3">
+                    <div class="row gx-5" id="2">
                         <div class="col col-1">
                             <img src="https://i5.walmartimages.com/asr/1c21f85d-2ed1-4196-bde8-62a8573b6191.20c5c5fda1aca2f7d7e197970eaebb88.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff"
                                 id="productimg" /><br><br>
@@ -546,11 +546,11 @@
                             </p>
                         </div>
                         <div class="col col-1">
-                            <button type="button" class="btn" onclick="removeFromCart(3)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
+                            <button type="button" class="btn" onclick="removeFromCart(2)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
                         </div>
                         <hr>
                     </div>
-                    <div class="row gx-5" id="4">
+                    <div class="row gx-5" id="3">
                         <div class="col col-1">
                             <img src="https://i5.walmartimages.com/asr/40f13cd8-4fa8-4c51-88a9-3de4253cd4b4.d5a48d6fa25f4d9273400ef01a18fe9a.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff"
                                 id="productimg" /><br><br>
@@ -565,37 +565,37 @@
                             </p>
                         </div>
                         <div class="col col-1">
-                            <button type="button" class="btn" onclick="removeFromCart(4)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
+                            <button type="button" class="btn" onclick="removeFromCart(3)"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
                         </div>
                         <hr>
                     </div>
                 </div>
                 <div class="col col-1"><br>
-                    <h5>Total</h5>$24.31
+                    <h5>Total</h5><p id="total"></p>
                 </div>
                 <!-- list of produce -->
                 <div class="col col-3" style="float: right; height: 550px; overflow-y: scroll;">
                     <div id="list-example" class="list-group">
-                        <a class="list-group-item list-group-item-action">apples</a>
-                        <a class="list-group-item list-group-item-action">avocados</a>
-                        <a class="list-group-item list-group-item-action">blackberries</a>
-                        <a class="list-group-item list-group-item-action">blueberries</a>
-                        <a class="list-group-item list-group-item-action">lemons</a>
-                        <a class="list-group-item list-group-item-action">limes</a>
-                        <a class="list-group-item list-group-item-action">mangos</a>
-                        <a class="list-group-item list-group-item-action">oranges</a>
-                        <a class="list-group-item list-group-item-action">raspberries</a>
-                        <a class="list-group-item list-group-item-action">strawberries</a>
-                        <a class="list-group-item list-group-item-action">asparagus</a>
-                        <a class="list-group-item list-group-item-action">broccoli</a>
-                        <a class="list-group-item list-group-item-action">cabbage</a>
-                        <a class="list-group-item list-group-item-action">carrots</a>
-                        <a class="list-group-item list-group-item-action">cauliflower</a>
-                        <a class="list-group-item list-group-item-action">cucumbers</a>
-                        <a class="list-group-item list-group-item-action">lettuce</a>
-                        <a class="list-group-item list-group-item-action">onions</a>
-                        <a class="list-group-item list-group-item-action">potatoes</a>
-                        <a class="list-group-item list-group-item-action">zucchini</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(0)">apples</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(1)">avocados</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(2)">blackberries</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(3)">blueberries</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(4)">lemons</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(5)">limes</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(6)">mangos</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(7)">oranges</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(8)">raspberries</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(9)">strawberries</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(10)">asparagus</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(11)">broccoli</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(12)">cabbage</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(13)">carrots</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(14)">cauliflower</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(15)">cucumbers</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(16)">lettuce</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(17)">onions</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(18)">potatoes</a>
+                        <a class="list-group-item list-group-item-action" onclick="addToCart(19)">zucchini</a>
                     </div>
                 </div>
             </div>
