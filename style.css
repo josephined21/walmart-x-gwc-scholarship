@@ -67,26 +67,6 @@ body {
   font-size: 40px !important;
 }
 
-#clicktolearnmore {
-  color: white;
-  background-color: #007dc6;
-  font-family: 'Poppins', sans-serif !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  border: none;
-  border-radius: 30px !important;
-  padding: 20px !important;
-  width: 225px !important;
-  position: absolute;
-  top: 300px !important;
-  left: 80px !important;
-}
-
-#clicktolearnmore:hover {
-  color: white !important;
-  background-color: #c0daed !important;
-}
-
 .stage {
   display: flex;
   float: left;
@@ -170,7 +150,6 @@ h1 {
   width: 0;
   top: 0;
   left: 25;
-  background-color: #ffc220;
   overflow-x: hidden;
   padding-top: 25px;
   transition: 0.5s;
