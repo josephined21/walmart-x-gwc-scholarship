@@ -56,56 +56,58 @@ function search() {
 let index = 4;
 
 function addToCart(n) {
-    index++;
-    document.getElementById("yourcart").innerHTML +=
-        `<div class="row gx-5" id=${index}>
-        <div class="col col-1">
-            <img src="${images[n]}"
-            id="productimg" /><br><br>
-            </div>
-            <div class="col col-6" style="margin-left: 75px;">
-                <h6 id="list-item-1">${produce[n]}</h6>
-            </div>
-            <div class="col col-2">
-                <p>
-                    $${prices[n].toFixed(2)}<br>
-                    Qty <input type="number" class="form-control" min=1 max=12 value=1>
-                </p>
-            </div>
-            <div class="col col-1">
-                <button type="button" class="btn" onclick="removeFromCart(${index})"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
-            </div>
-            <hr>
-        </div>
-    </div>`;
+    // if () {
 
-    cart.push({
-        "id": index,
-        "item": produce[n],
-        "image": images[n],
-        "price": prices[n],
-        "qty": 1
-    });
-    console.log(cart);
+    // } else {
+        index++;
+        document.getElementById("yourcart").innerHTML +=
+            `<div class="row gx-5" id=${index}>
+                <div class="col col-1">
+                    <img src="${images[n]}"
+                    id="productimg" /><br><br>
+                    </div>
+                    <div class="col col-6" style="margin-left: 75px;">
+                        <h6 id="list-item-1">${produce[n]}</h6>
+                    </div>
+                    <div class="col col-2">
+                        <p>
+                            $${prices[n].toFixed(2)}<br>
+                            Qty <input type="number" class="form-control" min=1 max=12 value=1>
+                        </p>
+                    </div>
+                    <div class="col col-1">
+                        <button type="button" class="btn" onclick="removeFromCart(${index})"><img src="https://image.flaticon.com/icons/png/512/1214/1214428.png" width=17.5px/></button>
+                    </div>
+                    <hr>
+                </div>
+            </div>`;
+
+        cart.push({
+            "id": index,
+            "item": produce[n],
+            "image": images[n],
+            "price": prices[n],
+            "qty": 1
+        });
+    // }
 
     calculateTotal();
 }
 
 function removeFromCart(id) {
-    for(let i = 0; i < cart.length; i++) {
-        if(cart[i]["id"] == id) {
+    for (let i = 0; i < cart.length; i++) {
+        if (cart[i]["id"] == id) {
             cart.splice(i, 1);
             break;
         }
     }
-    console.log(cart);
     calculateTotal();
     document.getElementById(id).style.display = "none";
 }
 
 function calculateTotal() {
     total = 0;
-    for(let i = 0; i < cart.length; i++) {
+    for (let i = 0; i < cart.length; i++) {
         total += cart[i]["price"];
     }
     document.querySelector("#total").innerHTML = "$" + total.toFixed(2);
