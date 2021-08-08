@@ -157,7 +157,7 @@ h1 {
 }
 
 /* sustainability section */
-.sustainability {
+.sustainabilitysection {
   color: white;
   text-align: center;
 }
@@ -236,10 +236,18 @@ footer a:hover {
   background-color: #c0daed !important;
   font-family: 'Poppins', sans-serif !important;
   border-radius: 30px !important;
-  
 }
 
 .guest:hover {
   color: white !important;
   background-color: #007dc6 !important;
+}
+
+.accordion-header {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.accordion-item {
+  color: white !important;
+  background-color: black !important;
 }
