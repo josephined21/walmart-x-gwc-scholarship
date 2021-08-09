@@ -1,8 +1,21 @@
 document.getElementById("mainscreen").style.display = "none";
+document.getElementById("checkout").style.display = "none";
 
 function cont() {
     document.getElementById("signin").style.display = "none";
     document.getElementById("mainscreen").style.display = "block";
+}
+
+function checkout() {
+    document.getElementById("checkout").style.display = "block";
+    document.getElementById("mainscreen").style.display = "none";
+    window.setTimeout(signin, 10000);
+}
+
+function signin() {
+    document.getElementById("signin").style.display = "block";
+    document.getElementById("mainscreen").style.display = "none";
+    document.getElementById("checkout").style.display = "none";
 }
 
 let cart = [
@@ -153,7 +166,3 @@ function toggleMap() {
     document.getElementById("producelist").style.display = "none";
     document.getElementById("map").style.display = "block";
 }
-
-// function checkout() {
-
-// }
