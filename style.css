@@ -52,7 +52,7 @@ body {
 /* top section */
 .cart {
   color: white;
-  font-family: 'Star Jedi Special', sans-serif  !important;
+  font-family: 'Star Jedi Special', 'Poppins', sans-serif  !important;
   text-align: left !important;
   padding-left: 50px !important;
   padding-bottom: 0px !important;
