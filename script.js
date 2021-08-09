@@ -58,12 +58,9 @@ function search() {
 let index = 4;
 
 function addToCart(n) {
-    // if () {
-
-    // } else {
-        index++;
-        document.getElementById("yourcart").innerHTML +=
-            `<div class="row gx-5" id=${index}>
+    index++;
+    document.getElementById("yourcart").innerHTML +=
+        `<div class="row gx-5" id=${index}>
                 <div class="col col-1">
                     <img src="${images[n]}"
                     id="productimg" /><br><br>
@@ -85,15 +82,14 @@ function addToCart(n) {
                 </div>
             </div>`;
 
-        cart.push({
-            "id": index,
-            "item": produce[n],
-            "image": images[n],
-            "price": prices[n],
-            "qty": 1,
-            "weight": ozAverageWeight[n]
-        });
-    // }
+    cart.push({
+        "id": index,
+        "item": produce[n],
+        "image": images[n],
+        "price": prices[n],
+        "qty": 1,
+        "weight": ozAverageWeight[n]
+    });
 
     calculateTotal();
 }
@@ -141,3 +137,23 @@ function openCloseNav() {
         document.getElementById("touchscreencontent").style.marginLeft = "0";
     }
 }
+
+document.getElementById("map").style.display = "none";
+
+function toggleCart() {
+    document.getElementById("yourcart").style.display = "block";
+    document.getElementById("carttotal").style.display = "block";
+    document.getElementById("producelist").style.display = "block";
+    document.getElementById("map").style.display = "none";
+}
+
+function toggleMap() {
+    document.getElementById("yourcart").style.display = "none";
+    document.getElementById("carttotal").style.display = "none";
+    document.getElementById("producelist").style.display = "none";
+    document.getElementById("map").style.display = "block";
+}
+
+// function checkout() {
+
+// }
