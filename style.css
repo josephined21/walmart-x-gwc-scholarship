@@ -143,6 +143,20 @@ h1 {
 }
 
 /* touchscreen demo section */
+/* sign in */
+.guest {
+  color: white !important;
+  background-color: #c0daed !important;
+  font-family: 'Poppins', sans-serif !important;
+  border-radius: 30px !important;
+}
+
+.guest:hover {
+  color: white !important;
+  background-color: #007dc6 !important;
+}
+
+/* main */
 .sidebar {
   float: left;
   position: relative;
@@ -186,6 +200,16 @@ h1 {
   width: 100px;
 }
 
+/* faq */
+.accordion-header {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.accordion-item {
+  color: white !important;
+  background-color: black !important;
+}
+
 /* footer */
 footer {
   background-color: black;
@@ -208,25 +232,4 @@ footer a:hover {
   height: 20px !important;
   width: 20px !important;
   margin-right: 20px;
-}
-
-.guest {
-  color: white !important;
-  background-color: #c0daed !important;
-  font-family: 'Poppins', sans-serif !important;
-  border-radius: 30px !important;
-}
-
-.guest:hover {
-  color: white !important;
-  background-color: #007dc6 !important;
-}
-
-.accordion-header {
-  font-family: 'Poppins', sans-serif !important;
-}
-
-.accordion-item {
-  color: white !important;
-  background-color: black !important;
 }

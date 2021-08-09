@@ -1,17 +1,20 @@
 document.getElementById("mainscreen").style.display = "none";
 document.getElementById("checkout").style.display = "none";
 
+// sign in to main
 function cont() {
     document.getElementById("signin").style.display = "none";
     document.getElementById("mainscreen").style.display = "block";
 }
 
+// main to check out
 function checkout() {
     document.getElementById("checkout").style.display = "block";
     document.getElementById("mainscreen").style.display = "none";
     window.setTimeout(signin, 10000);
 }
 
+// check out to main, timer in function checkout set to change after 10 secs
 function signin() {
     document.getElementById("signin").style.display = "block";
     document.getElementById("mainscreen").style.display = "none";
@@ -58,6 +61,7 @@ let images = ["https://i5.walmartimages.com/asr/f46d4fa7-6108-4450-a610-cc95a1ca
 let prices = [0.67, 2.58, 0.54, 0.43, 0.65, 3.60, 2.98, 1.11, 2.04, 0.82, 2.44, 0.68, 1.28, 2.44, 0.62, 2.96];
 let ozAverageWeight = [6.8, 6, 3.5, 1.7, 7, 4.6, 0.8, 8, 32, 16, 17.6, 8.8, 28.8, 48, 6.5, 7];
 
+// search bar for produce
 function search() {
     let input = document.querySelector("#input").value;
     for (let i = 0; i < produce.length; i++) {
@@ -70,6 +74,7 @@ function search() {
 
 let index = 4;
 
+// add produce to cart
 function addToCart(n) {
     index++;
     document.getElementById("yourcart").innerHTML +=
@@ -107,6 +112,7 @@ function addToCart(n) {
     calculateTotal();
 }
 
+// remove item from cart
 function removeFromCart(id) {
     for (let i = 0; i < cart.length; i++) {
         if (cart[i]["id"] == id) {
@@ -118,6 +124,7 @@ function removeFromCart(id) {
     document.getElementById(id).style.display = "none";
 }
 
+// calculate total
 function calculateTotal() {
     total = 0;
     for (let i = 0; i < cart.length; i++) {
@@ -153,6 +160,7 @@ function openCloseNav() {
 
 document.getElementById("map").style.display = "none";
 
+// icon button in navbar toggles cart view
 function toggleCart() {
     document.getElementById("yourcart").style.display = "block";
     document.getElementById("carttotal").style.display = "block";
@@ -160,6 +168,7 @@ function toggleCart() {
     document.getElementById("map").style.display = "none";
 }
 
+// icon button in navbar toggles map view
 function toggleMap() {
     document.getElementById("yourcart").style.display = "none";
     document.getElementById("carttotal").style.display = "none";
